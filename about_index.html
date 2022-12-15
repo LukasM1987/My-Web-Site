@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łukasz Marchel portfolio site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a id="logoLink"><img src="resources/Logo.png"></a>
+        <hr/>
+        <nav class="topNav" id="myTopNav">
+            <a href="index.html">Main Page</a>
+            <a hrev="javascript:void(0)" class="mobMenuIcon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="mainColumn">
+                <article class="mainItem">
+                    <img src="resources/me.JPG" class="myPhoto"></img>
+                    <h2>Hi! My name is Łukasz Marchel...</h2>
+                    <p id="fullText">I became interested in programming in September 2019, at the same time starting my studies at the Faculty of Economics of the Warsaw University of Life Sciences. My brother, who is a webmaster and who also experimented with programming in Java, persuaded me to this step (programming). The first steps were very difficult for me, just displaying "Hello World" was a black magic for me, but despite the initial difficulties I did not give up. I learned about the basics of programming from the Internet, and more specifically from YouTube videos. After a few months I was able to write simple 2D games. My first fully completed game was Snake. I was very happy to be able to write this game even though it was just green squares moving on a grid. :) In the summer of 2020, I wrote another game called Flappy Bird that used cartoon assets. At the beginning of summer 2021, I started the Kodilla bootcamp with an experienced mentor Marcin Szuppe. It was a 9-month course consisting of 36 modules plus a zero module which was unlocked weekly. Almost every module contained from 4 to about 10 tasks that were sent to GitHub for review by the mentor. After checking the task, the mentor approved the task or pointed out errors in the code. During the course, I enriched my knowledge with the basics of Java, and I also got to know new libraries that allow, for example, to conduct unit tests. Spring Framework and databases were completely new to me. In addition to new tasks unlocked every week, the bootcamp program also includes several larger team projects. The first project was a two-player game: player versus computer. I wrote a game that let you play ping-pong. The project had several requirements, the game had to have nice graphics, have at least two difficulty levels and be able to control the mouse or keyboard. I wrote the game in AWT and SWING technology. The computer has four strategies to choose from depending on the difficulty setting, which is expressed as a percentage. After finishing the project, I decided to add multiplayer. It was quite a fun adventure, but it was only 1/3 of the course.
+                    <br><br/>
+                    The next bigger project was a team project. The project concerned a backend application for an online store. The team was quite large because it consisted of 9 people and a project manager, who was a mentor. In this project I was responsible for the implementation of two entities and the actual implementation of one entity (service, mappers, dto and controller). Difficulties in this type of projects are conflicts ... fortunately only in the code. ;) But even the conflicts in the code were not so terrible because the team consisted of really friendly people. In case of problems we were in constant contact and supported each other. Thanks to this action, the project was completed after more than a week, despite the fact that the planned time was four weeks. After finishing the course, I started training Spring, because as I mentioned, he was still completely new to me. As the saying goes - practice makes perfect, after writing a few backed-up applications, spring ceased to be black magic for me. In the summer of 2022, I started a three-month internship at Orange Polska in the DevOps department of digital sales. There I got acquainted with the specifics of working in it, expanded my knowledge of the jira system and got to know the confluence system. The internship consisted in solving incidents related to the sales process. This was done, among others, using elastic search and browsing logs that returned JSON objects.
+                    <br><br>
+                    At the end of 2022, I started my adventure with learning the front end, which consists of HTML, CSS and JavaScript. So wish me luck and see you in the projects!
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="menu">
+            <a href="index.html">Main Page</a>
+        </div>
+        <div class="socialMedia">
+            <div class="share-icons">
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            2022 (c) Portfolio website made by <a hrev="">Łukasz Marchel</a> based on the course <a href="https://www.pikademia.pl/">pikademia.pl</a>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopNav");
+            if (x.className === "topNav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topNav";
+            }
+        }
+    </script>
+</body>
+</html>
